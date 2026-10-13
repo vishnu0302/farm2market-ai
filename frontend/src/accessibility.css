@@ -1,0 +1,101 @@
+:focus-visible {
+  outline: 3px solid #125d3a !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 0 3px #fff !important;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  position: relative;
+  z-index: 1;
+}
+
+button,
+input,
+select,
+.role-actions a {
+  min-height: 44px;
+}
+
+.batch-form label,
+.auth-card label,
+.inventory-filters label,
+.facility-selector label {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.empty-batches,
+.batch-list-heading p,
+.workspace-heading p,
+.market-comparison-heading p,
+.manual-eta-note,
+.risk-disclaimer,
+.batch-location,
+.batch-harvest,
+.batch-cost-note,
+.batch-facts small,
+.inventory-facts,
+.profile-grid span {
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.demo-tag,
+.eyebrow {
+  font-size: 12px;
+}
+
+.icon-button {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+}
+
+.form-message,
+.workflow-error,
+.market-error {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+@media (max-width: 650px) {
+  button,
+  input,
+  select,
+  .role-actions button,
+  .offer-select {
+    min-height: 44px;
+  }
+
+  .hero-buttons,
+  .role-actions,
+  .delivery-status-actions {
+    flex-wrap: wrap;
+  }
+
+  .hero-buttons > *,
+  .role-actions > *,
+  .delivery-status-actions > * {
+    min-width: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (forced-colors: active) {
+  :focus-visible {
+    outline: 3px solid Highlight !important;
+  }
+}
